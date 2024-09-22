@@ -109,7 +109,7 @@
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
 
-                <div class="container" onclick="myFunction(this)">
+                <div class="container" id= "myLinks" onclick="myFunction(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
