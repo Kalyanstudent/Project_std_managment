@@ -48,7 +48,7 @@
 
         .header a.active {
             background-color: dodgerblue;
-            color: white;
+            color: dodgerblue;
         }
 
         .header-right {
