@@ -70,6 +70,8 @@
         .container {
             display: inline-block;
             cursor: pointer;
+            padding-left: 100px;
+            padding-right: 20px;
         }
 
         .bar1,
@@ -104,10 +106,7 @@
             <a class="active" href="#home">Home</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+
                 <div class="container" onclick="myFunction(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
