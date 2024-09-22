@@ -9,6 +9,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         * {
             box-sizing: border-box;
@@ -42,13 +44,13 @@
         }
 
         .header a:hover {
-            background-color: #ddd;
+            background-color: #1e90ff;
             color: black;
         }
 
         .header a.active {
-            background-color: dodgerblue;
-            color: dodgerblue;
+            background-color: red;
+            color: white;
         }
 
         .header-right {
@@ -99,11 +101,11 @@
 </head>
 
 <body>
-
+<header>
     <div class="header">
         <a href="#default" class="logo">Student Management System </a>
         <div class="header-right">
-            <a class="active" href="#home">Home</a>
+            <a class="active" href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
 
@@ -115,7 +117,7 @@
        
         </div>
     </div>
-
+    </header>
     <div style="padding-left:20px">
         <h1>Responsive Header</h1>
         <p>Resize the browser window to see the effect.</p>
@@ -128,7 +130,13 @@
 
 
 <script>
-    function myFunction(x) {
-        x.classList.toggle("change");
-    }
+        function myFunction(x) {
+            x.classList.toggle("change");
+            var links = document.getElementById("myLinks");
+            if (links.className === "header-right") {
+                links.className += " responsive";
+            } else {
+                links.className = "header-right";
+            }
+        }
 </script>
